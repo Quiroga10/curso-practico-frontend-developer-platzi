@@ -70,4 +70,10 @@ a {
   font-size: 14px;
 }
 
+@media (max-width: 640px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=menu_desktop.css.map */

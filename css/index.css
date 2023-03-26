@@ -99,6 +99,78 @@ a {
   font-size: 14px;
 }
 
+@media (max-width: 640px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.logo {
+  width: 10.5rem;
+  margin-bottom: 4.8rem;
+  justify-self: center;
+  display: none;
+}
+
+a {
+  color: #ACD9B2;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5.4rem;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 6rem;
+  padding: 24px;
+}
+.mobile-menu ul {
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+.mobile-menu ul li {
+  margin-bottom: 24px;
+}
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+.mobile-menu ul:nth-child(1) {
+  border-bottom: 1px solid var(--very-light-pink);
+}
+.mobile-menu ul:nth-child(3) {
+  margin-top: 550px;
+}
+.mobile-menu .email {
+  font-size: var(--sm);
+  font-weight: 300 !important;
+}
+.mobile-menu .sign-out {
+  font-size: var(--sm);
+  color: var(--hospital-green);
+}
+
+@media (min-width: 641px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;

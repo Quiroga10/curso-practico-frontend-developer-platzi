@@ -1,6 +1,8 @@
 @import "../sass/globales.scss";
 
 .mobile-menu{
+    position:absolute;
+    top: 6rem;
     padding:24px;
     ul{
         padding:0;
@@ -28,5 +30,10 @@
     .sign-out{
         font-size:var(--sm);
         color: var(--hospital-green);
+    }
+}
+@media (min-width:641px){
+    .mobile-menu{
+        display:none;
     }
 }
