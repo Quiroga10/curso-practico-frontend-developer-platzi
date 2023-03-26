@@ -1,0 +1,23 @@
+@import "../sass/globales.scss";
+@import "../sass/my_order.scss";
+.order{
+    display:grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.order p:nth-child(1){
+    /*6 articles abajo de 03.25.21*/
+    display: flex;
+    flex-direction: column;
+}
+.order p:nth-child(2){
+    /*$560.00 se coloca hacia la derecha*/
+    text-align: end;
+    font-weight:bold;
+}
+.order p span:nth-child(1){
+    font-size:var(--md);
+    font-weight: bold;
+}

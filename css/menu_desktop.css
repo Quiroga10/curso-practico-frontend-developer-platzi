@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.logo {
+  width: 10.5rem;
+  margin-bottom: 4.8rem;
+  justify-self: center;
+  display: none;
+}
+
+a {
+  color: #ACD9B2;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5.4rem;
+}
+
+.desktop-menu {
+  width: 100px;
+  height: auto;
+  border: 1px solid #C7C7C7;
+  border-radius: 6px;
+  padding: 20px 20px 0 20px;
+}
+.desktop-menu ul {
+  list-style: none; /*Quitar los puntos de la lista*/
+  padding: 0;
+  margin: 0;
+  /*Las 2 primeras palabaras*/
+}
+.desktop-menu ul li {
+  text-align: end;
+}
+.desktop-menu ul li a {
+  color: #000000;
+  text-decoration: none;
+  /*para que funcione el margin-bottom debe ser un display:inline-block*/
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.desktop-menu ul li:nth-child(1),
+.desktop-menu ul li:nth-child(2) {
+  font-weight: bold;
+}
+.desktop-menu ul li:last-child {
+  padding-top: 20px;
+  border-top: 1px solid #C7C7C7;
+}
+.desktop-menu ul li:last-child a {
+  color: #ACD9B2;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=menu_desktop.css.map */

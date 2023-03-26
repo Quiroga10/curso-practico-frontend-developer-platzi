@@ -1,0 +1,24 @@
+@import "../sass/globales.scss";
+@import "../sass/login.scss";
+
+.title{
+    font-size:$lg;
+    margin-bottom: 22px;
+    text-align: center;
+    .input-name,
+    .input-password {
+        margin-bottom:22px;
+    }
+}
+@media(max-width: 640px){
+    .form-container{
+        height: 50%;
+        .title{
+            text-align: start;
+        }
+        .form{
+            height: 100%;
+            justify-content: space-between;
+        }
+    }
+}

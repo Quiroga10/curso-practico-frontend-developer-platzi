@@ -1,0 +1,28 @@
+@mixin form-container{
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+@mixin primary-button{
+    background-color: $hospital-green;
+    border-radius:8px;
+    border:none;
+    color: $white;
+    width: 100%;
+    cursor: pointer;
+    font-size:$md;
+    font-weight:bold;
+    height: 50px;
+}
+@mixin secondary-button{
+    background-color: $white;
+    border-radius:0.8rem;
+    border: 0.1rem solid $hospital-green;
+    color: $hospital-green;
+    width: 100%;
+    cursor: pointer;
+    font-size:$md;
+    font-weight:bold;
+    height: 5rem;
+}

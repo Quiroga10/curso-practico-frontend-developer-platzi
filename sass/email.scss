@@ -1,0 +1,48 @@
+@import "../sass/globales.scss";
+@import "../sass/login.scss";
+@import "../sass/mixins";
+.form-container{
+    @include form-container;
+    justify-items: center;/*Centrar el circulo y el icono de mensaje*/
+    .title{
+        font-size:$lg;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+}
+.subtitle{
+    color: $very-light-pink;
+    font-size:$md;
+    font-weight:300;
+    margin-top: 0;
+    margin-bottom:32px;
+    text-align: center;
+}
+.email-image{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: $text-input-field;
+    display:flex;/*1er- Se aumento de tamaño del icono del mensaje*/
+    justify-content: center;
+    align-items: center;/*1er- Se reducio el tamaño del icono del mensaje
+                        2do- Se centro el icono del mensaje, dentro del circulo
+                        */
+    margin-bottom:24px;
+    img{
+        width:80px;/*reducir el tamaño del icono del mensaje*/
+    }
+}
+/*Cambio de Texto*/
+.resend{
+    font-size:$sm;
+    span{
+        color:$very-light-pink;
+    }
+    a{
+        color:$hospital-green;
+        text-decoration:none;
+    }
+}
+
+

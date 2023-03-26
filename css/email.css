@@ -1,3 +1,33 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.logo {
+  width: 10.5rem;
+  margin-bottom: 4.8rem;
+  justify-self: center;
+  display: none;
+}
+
+a {
+  color: #ACD9B2;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5.4rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -98,5 +128,53 @@ a {
     display: block;
   }
 }
+.form-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+  justify-items: center; /*Centrar el circulo y el icono de mensaje*/
+}
+.form-container .title {
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-align: center;
+}
 
-/*# sourceMappingURL=login.css.map */
+.subtitle {
+  color: #C7C7C7;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.email-image {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-color: #F7F7F7;
+  display: flex; /*1er- Se aumento de tamaño del icono del mensaje*/
+  justify-content: center;
+  align-items: center; /*1er- Se reducio el tamaño del icono del mensaje
+2do- Se centro el icono del mensaje, dentro del circulo
+*/
+  margin-bottom: 24px;
+}
+.email-image img {
+  width: 80px; /*reducir el tamaño del icono del mensaje*/
+}
+
+/*Cambio de Texto*/
+.resend {
+  font-size: 14px;
+}
+.resend span {
+  color: #C7C7C7;
+}
+.resend a {
+  color: #ACD9B2;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=email.css.map */

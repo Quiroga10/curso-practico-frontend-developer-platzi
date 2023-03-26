@@ -1,0 +1,32 @@
+@import "../sass/globales.scss";
+
+.mobile-menu{
+    padding:24px;
+    ul{
+        padding:0;
+        margin:24px 0 0;
+        list-style:none;
+        li{
+            margin-bottom:24px;
+            a{
+                text-decoration:none;
+                color: var(--black);
+                font-weight: bold;
+            }
+        }
+    }
+    ul:nth-child(1){
+        border-bottom: 1px solid var(--very-light-pink);
+    }
+    ul:nth-child(3){
+        margin-top: 550px;
+    }
+    .email{
+        font-size:var(--sm);
+        font-weight:300 !important;
+    }
+    .sign-out{
+        font-size:var(--sm);
+        color: var(--hospital-green);
+    }
+}

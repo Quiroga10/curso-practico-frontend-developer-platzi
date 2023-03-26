@@ -1,0 +1,36 @@
+@import "../sass/globales.scss";
+.desktop-menu {
+    width: 100px;
+    height:auto;
+    border: 1px solid $very-light-pink;
+    border-radius:6px;
+    padding:20px 20px 0 20px;
+    ul{
+        list-style: none;/*Quitar los puntos de la lista*/
+        padding: 0;
+        margin: 0;
+        li{
+            text-align:end;
+            a{
+                color: $black;
+                text-decoration: none;
+                /*para que funcione el margin-bottom debe ser un display:inline-block*/
+                display: inline-block;
+                margin-bottom:20px;
+            }
+        }
+        /*Las 2 primeras palabaras*/
+        li:nth-child(1),
+        li:nth-child(2){
+            font-weight: bold;
+        }
+        li:last-child{
+            padding-top: 20px;
+            border-top: 1px solid $very-light-pink;
+        }
+        li:last-child a{
+            color: $hospital-green;
+            font-size: $sm;
+        }
+    }
+}
