@@ -1,55 +1,88 @@
 @import "../sass/globales.scss";
-.cards-container{
-    display:grid;
-    grid-template-columns: repeat(auto-fill,240px);
-    gap: 26px;/*espaciado entre las cards*/
-    place-content: center;/*centra todo los cards*/
-    /*“sintetiza” justify-content y align-content en una sola propiedad, por lo que afecta los ejes x y y con solo una línea de código, mientras que la otra afecta solo el eje x.*/
-    .product-card{
-        width:240px;
-        img{
-            width:240px;
-            height: 240px;
-            border-radius: 20px;
-            object-fit: cover;
+@import "../sass/menu_desktop.scss";
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid $very-light-pink;
+    .menu{
+        display:none;
+    }
+    .navbar-left ul,
+    .navbar-right ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        height:60px;
+    }
+    .navbar-left{
+        display: flex;
+        .logo_navbar{
+            width: 100px;
         }
-        .product-info{
-            display: flex;
-            justify-content:space-between;
-            align-items: center;
-            margin-top:12px;
-            figure{
-                margin: 0;
-                img{
-                    width: 35px;
-                    height: 35px;
-                }
+        ul{
+            margin-left: 12px;
+        }
+    }
+    .navbar-left ul li a,
+    .navbar-right ul li a{
+        text-decoration: none;
+        color: $very-light-pink;
+        border: 1px solid $white;
+        padding: 8px;
+        border-radius:8px;
+    }
+    .navbar-left ul li a:hover,
+    .navbar-right ul li a:hover{
+        text-decoration: none;
+        color: $very-light-pink;
+        border: 1px solid $hospital-green;
+        color: $hospital-green;
+    }
+    .navbar-right{
+        .navbar-email{
+            color: $very-light-pink;
+            font-size: $sm;
+            margin-right: 12px;
+            &:hover{
+                color: $hospital-green;
+                cursor: pointer;
             }
         }
-        .product-info div p:nth-child(1){
-            font-weight: bold;
-            font-size:$md;
-            margin-top: 0;
-            margin-bottom: 4px;
-        }
-        .product-info div p:nth-child(2){
-            font-size:$md;
-            margin-top: 0;
-            margin-bottom: 0;
-            color: $very-light-pink;
+        .navbar-shopping-cart{
+            position: relative;
+            div{
+                width:16px;
+                height: 16px;
+                background-color: $hospital-green;
+                border-radius: 50%;
+                font-size:$sm;
+                font-weight:bold;
+                position:absolute;
+                top: -6px;
+                right: -3px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
         }
     }
 }
 
-@media (max-width: 640px){
-    .cards-container{
-        grid-template-columns: repeat(auto-fill,140px);
-        .product-card{
-            width:140px;
-            img{
-                width:140px;
-                height: 140px;
+@media (max-width:640px){
+    nav{
+        .menu{
+            display:block;
+        }
+        .navbar-left{
+            ul{
+                display:none;
             }
+        }
+        .navbar-email{
+            display:none;
         }
     }
 }

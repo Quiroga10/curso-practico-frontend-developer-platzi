@@ -1,5 +1,11 @@
 @import "../sass/globales.scss";
+.inactive{
+    display: none;
+}
 .desktop-menu {
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
     width: 100px;
     height:auto;
     border: 1px solid $very-light-pink;

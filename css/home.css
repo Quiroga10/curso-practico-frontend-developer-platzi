@@ -1,0 +1,86 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.logo {
+  width: 10.5rem;
+  margin-bottom: 4.8rem;
+  justify-self: center;
+  display: none;
+}
+
+a {
+  color: #ACD9B2;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5.4rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 26px; /*espaciado entre las cards*/
+  place-content: center; /*centra todo los cards*/
+  /*“sintetiza” justify-content y align-content en una sola propiedad, por lo que afecta los ejes x y y con solo una línea de código, mientras que la otra afecta solo el eje x.*/
+}
+.cards-container .product-card {
+  width: 240px;
+}
+.cards-container .product-card img {
+  width: 240px;
+  height: 240px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.cards-container .product-card .product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+.cards-container .product-card .product-info figure {
+  margin: 0;
+}
+.cards-container .product-card .product-info figure img {
+  width: 35px;
+  height: 35px;
+}
+.cards-container .product-card .product-info div p:nth-child(1) {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.cards-container .product-card .product-info div p:nth-child(2) {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #C7C7C7;
+}
+
+@media (max-width: 640px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+  .cards-container .product-card {
+    width: 140px;
+  }
+  .cards-container .product-card img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

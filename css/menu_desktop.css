@@ -27,7 +27,14 @@ a {
   margin-bottom: 5.4rem;
 }
 
+.inactive {
+  display: none;
+}
+
 .desktop-menu {
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
   width: 100px;
   height: auto;
   border: 1px solid #C7C7C7;
