@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -134,6 +135,7 @@ a {
 }
 
 .mobile-menu {
+  background-color: #FFFFFf;
   position: absolute;
   top: 6rem;
   padding: 24px;
@@ -169,6 +171,210 @@ a {
 @media (min-width: 641px) {
   .mobile-menu {
     display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.logo {
+  width: 10.5rem;
+  margin-bottom: 4.8rem;
+  justify-self: center;
+  display: none;
+}
+
+a {
+  color: #ACD9B2;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5.4rem;
+}
+
+.product-detail {
+  background-color: #FFFFFf;
+  width: 36rem;
+  padding: 0 2.4rem;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+}
+.product-detail .title-container {
+  display: flex;
+}
+.product-detail .title-container img {
+  /*flecha invertida*/
+  transform: rotate(-180deg);
+  margin-right: 14px;
+}
+.product-detail .title-container .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.product-detail .my-order-content .primary-button {
+  background-color: #ACD9B2;
+  border-radius: 8px;
+  border: none;
+  color: #FFFFFf;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+}
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+.shopping-cart figure {
+  margin: 0;
+}
+.shopping-cart figure img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.shopping-cart p:nth-child(2) {
+  color: #C7C7C7;
+}
+
+.shopping-cart p:nth-child(3) {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.order {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  background-color: #F7F7F7;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.order p:nth-child(1) {
+  /*6 articles abajo de 03.25.21*/
+  display: flex;
+  flex-direction: column;
+}
+
+.order p:nth-child(2) {
+  /*$560.00 se coloca hacia la derecha*/
+  text-align: end;
+  font-weight: bold;
+}
+
+.order p span:nth-child(1) {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  .product-detail {
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.logo {
+  width: 10.5rem;
+  margin-bottom: 4.8rem;
+  justify-self: center;
+  display: none;
+}
+
+a {
+  color: #ACD9B2;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5.4rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 26px; /*espaciado entre las cards*/
+  place-content: center; /*centra todo los cards*/
+  /*“sintetiza” justify-content y align-content en una sola propiedad, por lo que afecta los ejes x y y con solo una línea de código, mientras que la otra afecta solo el eje x.*/
+  margin-top: 2rem;
+}
+.cards-container .product-card {
+  width: 240px;
+}
+.cards-container .product-card img {
+  width: 240px;
+  height: 240px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.cards-container .product-card .product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+.cards-container .product-card .product-info figure {
+  margin: 0;
+}
+.cards-container .product-card .product-info figure img {
+  width: 35px;
+  height: 35px;
+}
+.cards-container .product-card .product-info div p:nth-child(1) {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.cards-container .product-card .product-info div p:nth-child(2) {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #C7C7C7;
+}
+
+@media (max-width: 640px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+  .cards-container .product-card {
+    width: 140px;
+  }
+  .cards-container .product-card img {
+    width: 140px;
+    height: 140px;
   }
 }
 nav {

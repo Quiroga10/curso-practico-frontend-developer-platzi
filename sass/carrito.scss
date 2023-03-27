@@ -1,4 +1,37 @@
 @import "../sass/globales.scss";
+.product-detail{
+    background-color: $white;
+    width:36rem;
+    padding:0 2.4rem;
+    box-sizing: border-box;
+    position:absolute;
+    right: 0;
+    .title-container{
+        display:flex;
+        img{
+            /*flecha invertida*/
+            transform:rotate(-180deg);
+            margin-right:14px;
+        }
+        .title{
+            font-size:$lg;
+            font-weight:bold;
+        }
+    }
+    .my-order-content{
+        .primary-button{
+            background-color: $hospital-green;
+            border-radius:8px;
+            border:none;
+            color: $white;
+            width: 100%;
+            cursor: pointer;
+            font-size:$md;
+            font-weight:bold;
+            height: 50px;
+        }
+    }
+}
 .shopping-cart{
     display:grid;
     grid-template-columns: auto 1fr auto auto;
@@ -7,12 +40,12 @@
     align-items: center;
     figure{
         margin:0;
-    }
-    img{
-        width: 70px;
-        height:70px;
-        border-radius:20px;
-        object-fit: cover;
+        img{
+            width: 7rem;
+            height:7rem;
+            border-radius:2rem;
+            object-fit: cover;
+        }
     }
 }
 .shopping-cart p:nth-child(2){
@@ -45,38 +78,6 @@
 .order p span:nth-child(1){
     font-size:$md;
     font-weight: bold;
-}
-.product-detail{
-    width:360px;
-    padding: 24px;
-    box-sizing: border-box;
-    position:absolute;
-    right: 0;
-    .title-container{
-        display:flex;
-        img{
-            /*flecha invertida*/
-            transform:rotate(-180deg);
-            margin-right:14px;
-        }
-        .title{
-            font-size:$lg;
-            font-weight:bold;
-        }
-    }
-    .my-order-content{
-        .primary-button{
-            background-color: $hospital-green;
-            border-radius:8px;
-            border:none;
-            color: $white;
-            width: 100%;
-            cursor: pointer;
-            font-size:$md;
-            font-weight:bold;
-            height: 50px;
-        }
-    }
 }
 @media (max-width:640px){
     .product-detail{

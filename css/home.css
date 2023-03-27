@@ -34,6 +34,7 @@ a {
   gap: 26px; /*espaciado entre las cards*/
   place-content: center; /*centra todo los cards*/
   /*“sintetiza” justify-content y align-content en una sola propiedad, por lo que afecta los ejes x y y con solo una línea de código, mientras que la otra afecta solo el eje x.*/
+  margin-top: 2rem;
 }
 .cards-container .product-card {
   width: 240px;

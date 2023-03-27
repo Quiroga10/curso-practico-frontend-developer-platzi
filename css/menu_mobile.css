@@ -28,6 +28,7 @@ a {
 }
 
 .mobile-menu {
+  background-color: #FFFFFf;
   position: absolute;
   top: 6rem;
   padding: 24px;
