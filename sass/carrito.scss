@@ -1,8 +1,7 @@
 @import "../sass/globales.scss";
-.product-detail{
+aside{
     background-color: $white;
     width:36rem;
-    padding:0 2.4rem;
     box-sizing: border-box;
     position:absolute;
     right: 0;
@@ -31,6 +30,9 @@
             height: 50px;
         }
     }
+}
+#shoppingCartContainer{
+    padding: 0 2.4rem;
 }
 .shopping-cart{
     display:grid;
